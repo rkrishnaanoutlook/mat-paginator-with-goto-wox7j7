@@ -1,0 +1,13 @@
+<mat-toolbar color="primary"
+  >Material Paginator With GoTo (Jump To)</mat-toolbar
+>
+
+<div class="mat-app-background basic-container">
+  <mat-paginator-goto
+    [length]="100"
+    [pageIndex]="0"
+    [pageSize]="10"
+    [pageSizeOptions]="[5, 10, 25, 100]"
+    (page)="paginationChange($event)"
+  ></mat-paginator-goto>
+</div>

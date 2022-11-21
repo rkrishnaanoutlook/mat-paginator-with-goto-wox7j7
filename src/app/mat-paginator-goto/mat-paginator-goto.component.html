@@ -1,0 +1,18 @@
+<form>
+  <div class="d-flex">
+    <div class="go-to-container">
+      <div class="go-to-label">Go To:</div>
+      <mat-form-field>
+        <input (keyup.enter)="goToChange()" />
+      </mat-form-field>
+    </div>
+    <mat-paginator
+      [length]="length"
+      [pageIndex]="pageIndex"
+      [pageSize]="pageSize"
+      [pageSizeOptions]="pageSizeOptions"
+      (page)="paginationChange($event)"
+    >
+    </mat-paginator>
+  </div>
+</form>
